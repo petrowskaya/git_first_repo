@@ -1,0 +1,74 @@
+--------------------------------------------------------------------------------
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --list
+--------------------------------------------------------------------------------
+ mkdir pgit
+ cd pgit
+ git init
+ ls -la
+ touch app.py
+ git log
+ git status
+ git add app.py
+ git commit -m "Init commit"
+ 
+--------------------------------------------------------------------------------
+ git log
+ git show 9f399cd292131d6e27bdd05a78fb9663035783aa
+ git log -p
+ vim app.py
+ git restore app.py
+ vim app.py
+ git diff
+ 
+ git add app.py
+ git diff --staged
+ git commit -m "Refactoring"
+ git commit -am "Refactoring"
+
+Удалить файл и восстановить 
+$ git rm app.py
+$ git status
+$ git restore --staged app.py
+$ git status
+$ git restore app.py
+$ git mv *.py source/*.py
+ 
+Удалить файл из индекса
+$ git rm --cached app.py
+$ git status
+$ git commit -m "Remove app.py"
+$ git log
+$ git status
+
+.gitignore
+--------------------------------------------------------------------------------
+git branch new_api
+git branch -a
+git checkout new_api
+git branch -a
+git add app3.py
+git commit -m "add app3.py"
+$ git branch bugfix
+$ git checkout bugfix
+$ git status
+$ git add app2.py
+$ git commit -m "modify app2.py"
+$ git log
+
+$ git checkout master
+$ git branch -a
+$ git status
+
+
+735143e9
+--------------------------------------------------------------------------------
+Push репозитория на github
+$ git remote add origin git@ghub:petrowskaya/git_first_repo.git
+$ git remote add origin2 https://github.com/petrowskaya/git_first_repo.git 
+$ git remote -v
+$ git push origin master
+
+
+ 
