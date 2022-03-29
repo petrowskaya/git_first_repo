@@ -61,8 +61,12 @@ $ git checkout master
 $ git branch -a
 $ git status
 
+$ git merge new_api
+$ git branch -a
+$ git branch -d new_api
+$ git status
+$ git branch -a
 
-735143e9
 --------------------------------------------------------------------------------
 Push репозитория на github
 $ git remote add origin git@ghub:petrowskaya/git_first_repo.git
